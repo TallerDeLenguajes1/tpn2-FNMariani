@@ -30,9 +30,8 @@ int main()
     {
         for (c = 0; c < M; c++)
         {
-            printf("%6.2lf  ", *(*(mt + f) + c));
+            printf("%6.2lf  ", *(pMt + f * M + c) );
         }
-
         printf("\n");
     }
 
@@ -50,4 +49,5 @@ int main()
     pMt = &mt[0][0];
 
     getchar();
+    return 0;
 }
